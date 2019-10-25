@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+    <PropertyGroup>
+    <CodeAnalysisRuleSet>C:\Users\Steve\Documents\Visual Studio 2019\DoItWright.ruleset</CodeAnalysisRuleSet>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningsAsErrors />
+    <Authors>Steve Wright</Authors>
+    <Company>Do It Wright</Company>
+    <Product>RED7 Utilities Tests</Product>
+    <Description>Tests for the Utitilies for the Red7 games.</Description>
+    <Copyright>Copyright (c) Do It Wright. All rights reserved.</Copyright>
+    <NeutralLanguage>en-GB</NeutralLanguage>
+  </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+      <DocumentationFile>C:\Users\Steve\Documents\Visual Studio 2017\Projects\Red7\Red7.Utilities.Test\Red7.Utilities.Test.xml</DocumentationFile>
+    </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="stylecop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="stylecop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.3.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.0.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.0.0" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Red7.Utilities\Red7.Utilities.csproj" />
+  </ItemGroup>
+
+</Project>

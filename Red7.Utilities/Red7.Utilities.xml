@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Red7.Utilities</name>
+    </assembly>
+    <members>
+        <member name="T:Red7.Utilities.ListExtensions">
+            <summary>
+            Extension methods for Lists.
+            </summary>
+        </member>
+        <member name="M:Red7.Utilities.ListExtensions.Shuffle``1(System.Collections.Generic.IList{``0})">
+            <summary>
+            Shuffles the specified list.
+            </summary>
+            <typeparam name="T">Type of the list.</typeparam>
+            <param name="list">The list.</param>
+        </member>
+        <member name="T:Red7.Utilities.ThreadSafeRandom">
+            <summary>
+            Thread safe version of Random.
+            </summary>
+        </member>
+        <member name="P:Red7.Utilities.ThreadSafeRandom.ThisThreadsRandom">
+            <summary>
+            Gets the Random number generator.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,651 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Red7.Domain.Test</name>
+    </assembly>
+    <members>
+        <member name="T:Red7.Domain.Test.Axioms.DefaultRuleTests">
+            <summary>
+            Test DefaultRule.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Axioms.DefaultRuleTests.TestDefaultRuleIsRed">
+            <summary>
+            Tests that the Default Rule is Red.
+            </summary>
+        </member>
+        <member name="T:Red7.Domain.Test.Axioms.EvenNumbersTests">
+            <summary>
+            Test EvenNumbers.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Axioms.EvenNumbersTests.TestCorrectNumberOfEvenNumbers">
+            <summary>
+            Tests that the list has the correct number of even numbers.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Axioms.EvenNumbersTests.TestNumbersAreEven">
+            <summary>
+            Tests that the numbers are even.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Axioms.EvenNumbersTests.TestNumbersAreUnique">
+            <summary>
+            Tests that the numbers are unique.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Axioms.EvenNumbersTests.TestNumbersAreInDescendingOrder">
+            <summary>
+            Tests that the numbers are in descending order.
+            </summary>
+        </member>
+        <member name="T:Red7.Domain.Test.Axioms.GetRuleTests">
+            <summary>
+            Test GetRule.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Axioms.GetRuleTests.TestForEachColourReturnsCorrectRule(Red7.Domain.ValueObjects.Colour)">
+            <summary>
+            Test that requesting a rule for a specific colour returns the correct rule.
+            </summary>
+            <param name="colour">Colour.</param>
+        </member>
+        <member name="T:Red7.Domain.Test.Axioms.HighestCardNumberTests">
+            <summary>
+            Test HighestCardNumber.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Axioms.HighestCardNumberTests.TestHighestCardNumber">
+            <summary>
+            Tests the Highest Card Number axiom.
+            </summary>
+        </member>
+        <member name="T:Red7.Domain.Test.Axioms.InitialNumberOfCardsInHandTests">
+            <summary>
+            Test InitialNumberOfCardsInHand.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Axioms.InitialNumberOfCardsInHandTests.TestInitialNumberOfCardsInHand">
+            <summary>
+            Tests the Initial Number of Cards in Hand axiom.
+            </summary>
+        </member>
+        <member name="T:Red7.Domain.Test.Axioms.InitialNumberOfCardsInPaletteTests">
+            <summary>
+            Test InitialNumberOfCardsInPalette.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Axioms.InitialNumberOfCardsInPaletteTests.TestInitialNumberOfCardsInPalette">
+            <summary>
+            Tests the Initial Number of Cards in Palette axiom.
+            </summary>
+        </member>
+        <member name="T:Red7.Domain.Test.Axioms.LowestCardNumberTests">
+            <summary>
+            Test LowestCardNumber.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Axioms.LowestCardNumberTests.TestLowestCardNumber">
+            <summary>
+            Tests the Lowest Card Number axiom.
+            </summary>
+        </member>
+        <member name="T:Red7.Domain.Test.Axioms.RulesTests">
+            <summary>
+            Test RedRule, OrangeRule, YellowRule, GreenRule, BlueRule, IndigoRule and VioletRule.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Axioms.RulesTests.TestRedRule">
+            <summary>
+            Tests the Red Rule axiom.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Axioms.RulesTests.TestOrangeRule">
+            <summary>
+            Tests the Orange Rule axiom.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Axioms.RulesTests.TestYellowRule">
+            <summary>
+            Tests the Yellow Rule axiom.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Axioms.RulesTests.TestGreenRule">
+            <summary>
+            Tests the Green Rule axiom.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Axioms.RulesTests.TestBlueRule">
+            <summary>
+            Tests the Blue Rule axiom.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Axioms.RulesTests.TestIndigoRule">
+            <summary>
+            Tests the Indigo Rule axiom.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Axioms.RulesTests.TestVioletRule">
+            <summary>
+            Tests the Violet Rule axiom.
+            </summary>
+        </member>
+        <member name="T:Red7.Domain.Test.Axioms.RunsTests">
+            <summary>
+            Test for the Runs property.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Axioms.RunsTests.TestRunsPopulated">
+            <summary>
+            Tests that Runs is populated correctly.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Axioms.RunsTests.TestRunsAreOfCorrectLength(System.Int32,System.Int32)">
+            <summary>
+            Tests the length of the runs are correct.
+            </summary>
+            <param name="index">The index.</param>
+            <param name="expectedLength">The expected length.</param>
+        </member>
+        <member name="M:Red7.Domain.Test.Axioms.RunsTests.TestCardsInRunAreInDescendingOrder">
+            <summary>
+            Tests that cards in run are in descending order.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Axioms.RunsTests.TestRunsAreUnique(System.Int32)">
+            <summary>
+            Tests that runs of the same length are unique.
+            </summary>
+            <param name="runLength">Length of the run.</param>
+        </member>
+        <member name="T:Red7.Domain.Test.Canvases.AddCardTests">
+            <summary>
+            Test AddCard.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Canvases.AddCardTests.TestAddCardOnce">
+            <summary>
+            Tests that calling AddCard once has just one card on the canvas,
+            changing the current rule to match that card.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Canvases.AddCardTests.TestAddCardTwice">
+            <summary>
+            Tests that calling AddCard twice has two cards on the canvas,
+            changing the current rule to match the second card.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Canvases.AddCardTests.TestAddNullCardThrowsArgumentNullException">
+            <summary>
+            Test that adding a Null card throws an ArgumentNullException.
+            </summary>
+            <exception cref="T:System.IO.IOException">Ignore.</exception>
+        </member>
+        <member name="T:Red7.Domain.Test.Canvases.ConstructorTests">
+            <summary>
+            Test Constructor.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Canvases.ConstructorTests.TestConstructor">
+            <summary>
+            Tests the constructor.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Canvases.ConstructorTests.TestInitialCurrentRuleIsAxiomDefaultRule">
+            <summary>
+            Tests that the initial current rule is axiom default rule.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Canvases.ConstructorTests.TestCardsAreEmpty">
+            <summary>
+            Tests that the cards are empty.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Canvases.ConstructorTests.ConstructorWithNullAxiom">
+            <summary>
+            Test that creating a Canvas with a null axiom throws and exception.
+            </summary>
+            <exception cref="T:System.IO.IOException">Ignore.</exception>
+        </member>
+        <member name="T:Red7.Domain.Test.Cards.CompareToTests">
+            <summary>
+            Tests the CompareTo.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Cards.CompareToTests.CompareCardTest(Red7.Domain.ValueObjects.Colour,Red7.Domain.ValueObjects.Number,System.Int32)">
+            <summary>
+            Test that CompareTo works with various card and number combinations.
+            </summary>
+            <param name="cardColour">The other card colour.</param>
+            <param name="cardNumber">The other card number.</param>
+            <param name="expectedComparison">The expected comparison.</param>
+        </member>
+        <member name="T:Red7.Domain.Test.Cards.ConstructorTests">
+            <summary>
+            Test the Constructor.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Cards.ConstructorTests.TestConstructor(Red7.Domain.ValueObjects.Colour,Red7.Domain.ValueObjects.Number)">
+            <summary>
+            Tests the constructor with various colour and number combinations.
+            </summary>
+            <param name="cardColour">The card colour.</param>
+            <param name="cardNumber">The card number.</param>
+        </member>
+        <member name="T:Red7.Domain.Test.Cards.TopCardTests">
+            <summary>
+            Test TopCard().
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Cards.TopCardTests.PickTopCardFromSingleCardReturnsThatCard">
+            <summary>
+            Picking the top card from a list of just one card will return that card.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Cards.TopCardTests.PickTopCardFromBlue2AndRed3ReturnsRed3(Red7.Domain.ValueObjects.Colour,Red7.Domain.ValueObjects.Number,Red7.Domain.ValueObjects.Colour,Red7.Domain.ValueObjects.Number)">
+            <summary>
+            Picking the top card from blue2 and red3 returns red3, regardless of the order of the cards.
+            </summary>
+            <param name="card1Colour">The Colour of Card 1.</param>
+            <param name="card1Number">The Number of Card 1.</param>
+            <param name="card2Colour">The Colour of Card 2.</param>
+            <param name="card2Number">The Number of Card 2.</param>
+        </member>
+        <member name="M:Red7.Domain.Test.Cards.TopCardTests.PickTopCardFromEmptyListReturnsNull">
+            <summary>
+            Picking the top card from an empty list should return null.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Cards.TopCardTests.PickTopCardFromNullListThrowsArgumentNullException">
+            <summary>
+            Picks the top card from null list throws argument null exception.
+            </summary>
+            <exception cref="T:System.IO.IOException">Ignore.</exception>
+        </member>
+        <member name="T:Red7.Domain.Test.Decks.ConstructorTests">
+            <summary>
+            Test Constructor.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Decks.ConstructorTests.ConstructorTest">
+            <summary>
+            Test the constructor.
+            </summary>
+        </member>
+        <member name="T:Red7.Domain.Test.Decks.DealHandTests">
+            <summary>
+            Test DealHand.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Decks.DealHandTests.TestDealHand">
+            <summary>
+            Tests that dealing a hand creates a hand with the correct number of cards
+            and that the deck has been shortened by that number of cards.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Decks.DealHandTests.TestDealingWithInsufficientCardsReturnsNullHand">
+            <summary>
+            Tests the dealing with insufficient cards returns null hand.
+            </summary>
+        </member>
+        <member name="T:Red7.Domain.Test.Decks.DealPaletteTests">
+            <summary>
+            Test DealPalette.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Decks.DealPaletteTests.TestDealHand">
+            <summary>
+            Tests that dealing a palette creates a palette with the correct number of cards
+            and that the deck has been shortened by that number of cards.
+            </summary>
+        </member>
+        <member name="T:Red7.Domain.Test.Hands.ConstructorTests">
+            <summary>
+            Test Constructor.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Hands.ConstructorTests.TestConstructorWithValidParameters">
+            <summary>
+            Tests the constructor with valid parameters works.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Hands.ConstructorTests.TestConstructorWithNullCardsThrowsException">
+            <summary>
+            Test Constructor with null cards throws exception.
+            </summary>
+            <exception cref="T:System.IO.IOException">Ignore.</exception>
+        </member>
+        <member name="T:Red7.Domain.Test.Hands.FoldTests">
+            <summary>
+            Test Fold.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Hands.FoldTests.TestFoldReturnsCorrectCards">
+            <summary>
+            Tests that fold returns the correct cards and that the hand
+            no longer has any cards remaining.
+            </summary>
+        </member>
+        <member name="T:Red7.Domain.Test.Palettes.AddCardTests">
+            <summary>
+            Test AddCard().
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Palettes.AddCardTests.TestAddCardAddsTheCardToThePalette">
+            <summary>
+            Test that AddCard adds the cards to the palette.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Palettes.AddCardTests.TestAddNullCardThrowsAnException">
+            <summary>
+            Test that adding a null card throws an exception.
+            </summary>
+            <exception cref="T:System.IO.IOException">Ignore.</exception>
+        </member>
+        <member name="M:Red7.Domain.Test.Palettes.AddCardTests.TestAddDuplicateCardThrowsAnException">
+            <summary>
+            Test that adding a duplicate card throws an exception.
+            </summary>
+            <exception cref="T:System.IO.IOException">Ignore.</exception>
+        </member>
+        <member name="T:Red7.Domain.Test.Palettes.CardsTests">
+            <summary>
+            Test AddCards().
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Palettes.CardsTests.TestCardsPropertyReturnsAllTheCards">
+            <summary>
+            Tests that  cards property returns all the cards.
+            </summary>
+        </member>
+        <member name="T:Red7.Domain.Test.Palettes.ConstructorTests">
+            <summary>
+            Test AddCards().
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Palettes.ConstructorTests.TestConstructorWithValidListOfCards">
+            <summary>
+            Tests the constructor with valid list of cards.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Palettes.ConstructorTests.TestConstructorWithNullListOfCardsThrowsException">
+            <summary>
+            Tests that the constructor with null list of cards throws exception.
+            </summary>
+            <exception cref="T:System.IO.IOException">Ignore.</exception>
+        </member>
+        <member name="M:Red7.Domain.Test.Palettes.ConstructorTests.TestConstructorWithEmptyListOfCardsThrowsException">
+            <summary>
+            Tests that the constructor with empty list of cards throws exception.
+            </summary>
+            <exception cref="T:System.IO.IOException">Ignore.</exception>
+        </member>
+        <member name="T:Red7.Domain.Test.Palettes.FoldTests">
+            <summary>
+            Test Fold().
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.Palettes.FoldTests.TestFoldingReturnsFoldedCardsAndClearsTheCardsProperty">
+            <summary>
+            Tests that folding returns folded cards and clears the cards property.
+            </summary>
+        </member>
+        <member name="T:Red7.Domain.Test.RuleScores.CompareToTests">
+            <summary>
+            Test CompareTo().
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.RuleScores.CompareToTests.TestCompareToNullThrowsException">
+            <summary>
+            Tests the compare to null throws exception.
+            </summary>
+            <exception cref="T:System.IO.IOException">Ignore.</exception>
+        </member>
+        <member name="M:Red7.Domain.Test.RuleScores.CompareToTests.TestCompareWithVariousCombinations(Red7.Domain.ValueObjects.Colour,Red7.Domain.ValueObjects.Number,System.Int32,System.Int32)">
+            <summary>
+            Tests the compare with various combinations.
+            </summary>
+            <param name="topCard1Colour">The top card colour.</param>
+            <param name="topCard1Number">The top card number.</param>
+            <param name="numberOfCards1">The number of cards.</param>
+            <param name="expectedResult">The expected result.</param>
+        </member>
+        <member name="M:Red7.Domain.Test.RuleScores.CompareToTests.TestCompareWithZeroScore">
+            <summary>
+            Tests the compare with a zero score.
+            </summary>
+        </member>
+        <member name="T:Red7.Domain.Test.RuleScores.ConstructorTests">
+            <summary>
+            Test Constructor.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.RuleScores.ConstructorTests.TestConstructorWithActualScore">
+            <summary>
+            Tests the constructor with actual score.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.RuleScores.ConstructorTests.TestConstructorWithZeroScore">
+            <summary>
+            Tests the constructor with zero score (and null top card).
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.RuleScores.ConstructorTests.TestConstructorWithBadNumberOfCards(System.Int32)">
+            <summary>
+            Tests the constructor with bad number of cards throws an exception.
+            </summary>
+            <param name="numberOfCards">The number of cards.</param>
+            <exception cref="T:System.IO.IOException">Ignore.</exception>
+        </member>
+        <member name="M:Red7.Domain.Test.RuleScores.ConstructorTests.TestConstructorWithPositiveNumberOfCardsAndNullTopCard">
+            <summary>
+            Tests the constructor with positive number of cards and null top card
+            throws an exception.
+            </summary>
+            <exception cref="T:System.IO.IOException">Ignore.</exception>
+        </member>
+        <member name="M:Red7.Domain.Test.RuleScores.ConstructorTests.TestConstructorWithZeroNumberOfCardsAndNullTopCard">
+            <summary>
+            Tests the constructor with zero number of cards and null top card
+            throws an exception.
+            </summary>
+            <exception cref="T:System.IO.IOException">Ignore.</exception>
+        </member>
+        <member name="T:Red7.Domain.Test.RulesTests.BlueRuleTests.ConstructorTests">
+            <summary>
+            Test Green Rule.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.RulesTests.BlueRuleTests.ConstructorTests.TestConstructor">
+            <summary>
+            Tests the constructor.
+            </summary>
+        </member>
+        <member name="T:Red7.Domain.Test.RulesTests.BlueRuleTests.ScoreTests">
+            <summary>
+            Test Score for Blue Rule.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.RulesTests.BlueRuleTests.ScoreTests.TestScore">
+            <summary>
+            Test that Score picks out the most of different colours.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">Ignore.</exception>
+        </member>
+        <member name="T:Red7.Domain.Test.RulesTests.BlueRuleTests.ScoringCardsTests">
+            <summary>
+            Test ScoringCards for Blue Rule.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.RulesTests.BlueRuleTests.ScoringCardsTests.TestScoringCards">
+            <summary>
+            Test that ScoringCards picks top card in each colour
+            for the Blue Rule (Most different colours).
+            </summary>
+            <exception cref="T:System.InvalidOperationException">Ignore.</exception>
+        </member>
+        <member name="T:Red7.Domain.Test.RulesTests.GreenRuleTests.ConstructorTests">
+            <summary>
+            Test Green Rule.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.RulesTests.GreenRuleTests.ConstructorTests.TestConstructor">
+            <summary>
+            Tests the constructor.
+            </summary>
+        </member>
+        <member name="T:Red7.Domain.Test.RulesTests.GreenRuleTests.ScoreTests">
+            <summary>
+            Test Score for Green Rule.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.RulesTests.GreenRuleTests.ScoreTests.TestScore">
+            <summary>
+            Test that Score picks out even cards.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">Ignore.</exception>
+        </member>
+        <member name="M:Red7.Domain.Test.RulesTests.GreenRuleTests.ScoreTests.TestScoreWithNoEvenCards">
+            <summary>
+            Test that Score handle no even cards.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">Ignore.</exception>
+        </member>
+        <member name="T:Red7.Domain.Test.RulesTests.GreenRuleTests.ScoringCardsTests">
+            <summary>
+            Test ScoringCards for Green Rule.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.RulesTests.GreenRuleTests.ScoringCardsTests.TestScoringCards">
+            <summary>
+            Test that ScoringCards picks out the even cards
+            for the Green Rule (Most even cards wins).
+            </summary>
+            <exception cref="T:System.InvalidOperationException">Ignore.</exception>
+        </member>
+        <member name="M:Red7.Domain.Test.RulesTests.GreenRuleTests.ScoringCardsTests.TestScoringCardsWithNoEvenCards">
+            <summary>
+            Test that ScoringCards picks an empty list when there
+            are no even cards.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">Ignore.</exception>
+        </member>
+        <member name="T:Red7.Domain.Test.RulesTests.IndigoRuleTests.ConstructorTests">
+            <summary>
+            Test Indigo Rule.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.RulesTests.IndigoRuleTests.ConstructorTests.TestConstructor">
+            <summary>
+            Tests the constructor.
+            </summary>
+        </member>
+        <member name="T:Red7.Domain.Test.RulesTests.OrangeRuleTests.ConstructorTests">
+            <summary>
+            Test Orange Rule.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.RulesTests.OrangeRuleTests.ConstructorTests.TestConstructor">
+            <summary>
+            Tests the constructor.
+            </summary>
+        </member>
+        <member name="T:Red7.Domain.Test.RulesTests.OrangeRuleTests.ScoreTests">
+            <summary>
+            Test Score for Orange Rule.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.RulesTests.OrangeRuleTests.ScoreTests.TestScore">
+            <summary>
+            Test that Score picks out the most of one number.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">Ignore.</exception>
+        </member>
+        <member name="T:Red7.Domain.Test.RulesTests.OrangeRuleTests.ScoringCardsTests">
+            <summary>
+            Test ScoringCards for Orange Rule.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.RulesTests.OrangeRuleTests.ScoringCardsTests.TestScoringCards">
+            <summary>
+            Test that ScoringCards the Fours are the most of one number.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">Ignore.</exception>
+        </member>
+        <member name="T:Red7.Domain.Test.RulesTests.RedRuleTests.ConstructorTests">
+            <summary>
+            Test Red Rule.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.RulesTests.RedRuleTests.ConstructorTests.TestConstructor">
+            <summary>
+            Tests the constructor.
+            </summary>
+        </member>
+        <member name="T:Red7.Domain.Test.RulesTests.RedRuleTests.ScoreTests">
+            <summary>
+            Test Score for Red Rule.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.RulesTests.RedRuleTests.ScoreTests.TestScore">
+            <summary>
+            Test that Score picks out the highest card.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">Ignore.</exception>
+        </member>
+        <member name="T:Red7.Domain.Test.RulesTests.RedRuleTests.ScoringCardsTests">
+            <summary>
+            Test ScoringCards for Red Rule.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.RulesTests.RedRuleTests.ScoringCardsTests.TestScoringCards">
+            <summary>
+            Test that ScoringCards picks out the Red7 as the only scoring card
+            for the Red Rule (Highest card wins).
+            </summary>
+            <exception cref="T:System.InvalidOperationException">Ignore.</exception>
+        </member>
+        <member name="T:Red7.Domain.Test.RulesTests.VioletRuleTests.ConstructorTests">
+            <summary>
+            Test Violet Rule.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.RulesTests.VioletRuleTests.ConstructorTests.TestConstructor">
+            <summary>
+            Tests the constructor.
+            </summary>
+        </member>
+        <member name="T:Red7.Domain.Test.RulesTests.YellowRuleTests.ConstructorTests">
+            <summary>
+            Test DefaultRule.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.RulesTests.YellowRuleTests.ConstructorTests.TestConstructor">
+            <summary>
+            Tests the constructor.
+            </summary>
+        </member>
+        <member name="T:Red7.Domain.Test.RulesTests.YellowRuleTests.ScoreTests">
+            <summary>
+            Test Score for Yellow Rule.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.RulesTests.YellowRuleTests.ScoreTests.TestScore">
+            <summary>
+            Test that Score picks out the most of one colour.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">Ignore.</exception>
+        </member>
+        <member name="T:Red7.Domain.Test.RulesTests.YellowRuleTests.ScoringCardsTests">
+            <summary>
+            Test ScoringCards for Yellow Rule.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.Test.RulesTests.YellowRuleTests.ScoringCardsTests.TestScoringCards">
+            <summary>
+            Test that ScoringCards the Blues are the most of one colour.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">Ignore.</exception>
+        </member>
+    </members>
+</doc>

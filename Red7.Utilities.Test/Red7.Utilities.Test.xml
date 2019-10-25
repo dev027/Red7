@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Red7.Utilities.Test</name>
+    </assembly>
+    <members>
+        <member name="T:Red7.Utilities.Test.ListExtensionTests.ShuffleTests">
+            <summary>
+            Test ThreadSafeRandom.ThisThreadsRandom property.
+            </summary>
+        </member>
+        <member name="M:Red7.Utilities.Test.ListExtensionTests.ShuffleTests.TestShuffleRearrangesTheList">
+            <summary>
+            Tests that shuffle rearranges the list.
+            </summary>
+        </member>
+        <member name="M:Red7.Utilities.Test.ListExtensionTests.ShuffleTests.TestShuffleReturnsSameListSize">
+            <summary>
+            Tests that shuffle returns the same list size.
+            </summary>
+        </member>
+        <member name="M:Red7.Utilities.Test.ListExtensionTests.ShuffleTests.TestShuffleReturnsTheSameItems">
+            <summary>
+            Tests the shuffle returns the same items.
+            </summary>
+        </member>
+        <member name="T:Red7.Utilities.Test.ThreadSafeRandomTests.ThisThreadsRandomTests">
+            <summary>
+            Test ThreadSafeRandom.ThisThreadsRandom property.
+            </summary>
+        </member>
+        <member name="M:Red7.Utilities.Test.ThreadSafeRandomTests.ThisThreadsRandomTests.TestThatThisThreadsRandomReturnsNonNullObject">
+            <summary>
+            Test that the property returns a non-null object.
+            </summary>
+        </member>
+        <member name="M:Red7.Utilities.Test.ThreadSafeRandomTests.ThisThreadsRandomTests.TestThatThisThreadsRandomReturnsTheSameObjectEveryTime">
+            <summary>
+            Test that calling the property multiple times returns the same object.
+            </summary>
+        </member>
+    </members>
+</doc>

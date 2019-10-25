@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Copyright>Copyright (c) Do It Wright. All rights reserved.</Copyright>
+    <Company>Do It Wright</Company>
+    <Authors>Steve Wright</Authors>
+    <Product>RED 7 Utilities</Product>
+    <Description>Utilities for the Red7 game.</Description>
+  </PropertyGroup>
+
+ <PropertyGroup>
+    <CodeAnalysisRuleSet>C:\Users\Steve\Documents\Visual Studio 2019\DoItWright.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>C:\Users\Steve\Documents\Visual Studio 2017\Projects\Red7\Red7.Utilities\Red7.Utilities.xml</DocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningsAsErrors />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="stylecop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="stylecop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

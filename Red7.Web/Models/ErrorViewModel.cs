@@ -1,5 +1,3 @@
-using System;
-
 namespace Red7.Web.Models
 {
     public class ErrorViewModel

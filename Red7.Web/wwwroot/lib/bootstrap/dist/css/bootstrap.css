@@ -4,6 +4,13 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+/* ReSharper disable InvalidValue */
+/* ReSharper disable CssNotResolved */
+/* ReSharper disable Redundant */
+/* ReSharper disable Html.AttributeNotResolved */
+
+
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -91,7 +98,6 @@ p {
 
 abbr[title],
 abbr[data-original-title] {
-  text-decoration: underline;
   -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   cursor: help;
@@ -507,9 +513,9 @@ mark,
 }
 
 code {
-  font-size: 87.5%;
-  color: #e83e8c;
-  word-break: break-word;
+    font-size: 87.5%;
+    color: #e83e8c;
+    word-break: break-word;
 }
 
 a > code {
@@ -3104,6 +3110,7 @@ input[type="button"].btn-block {
 }
 
 .dropdown-menu[x-placement^="top"], .dropdown-menu[x-placement^="right"], .dropdown-menu[x-placement^="bottom"], .dropdown-menu[x-placement^="left"] {
+    
   right: auto;
   bottom: auto;
 }
@@ -4508,8 +4515,8 @@ input[type="button"].btn-block {
   .card-deck .card {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex: 1 0 0%;
-    flex: 1 0 0%;
+    -ms-flex: 1 0 0;
+    flex: 1 0 0;
     -ms-flex-direction: column;
     flex-direction: column;
     margin-right: 15px;
@@ -4535,8 +4542,8 @@ input[type="button"].btn-block {
     flex-flow: row wrap;
   }
   .card-group > .card {
-    -ms-flex: 1 0 0%;
-    flex: 1 0 0%;
+    -ms-flex: 1 0 0;
+    flex: 1 0 0;
     margin-bottom: 0;
   }
   .card-group > .card + .card {
@@ -9028,3 +9035,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+/* ReSharper restore InvalidValue */
+   /* ReSharper restore CssNotResolved */
+/* ReSharper restore Redundant */
+/* ReSharper restore Html.AttributeNotResolved */

@@ -1,0 +1,1094 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Red7.Domain</name>
+    </assembly>
+    <members>
+        <member name="T:Red7.Domain.DomainObjects.Axioms.Axiom">
+            <summary>
+            Game axioms.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Axioms.Axiom.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Red7.Domain.DomainObjects.Axioms.Axiom"/> class.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Axioms.Axiom.InitialNumberOfCardsInHand">
+            <summary>
+            Gets initial number of Cards in a Hand.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Axioms.Axiom.InitialNumberOfCardsInPalette">
+            <summary>
+            Gets initial number of Cards in a Palette.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Axioms.Axiom.HighestCardNumber">
+            <summary>
+            Gets the highest numbered card in a suit.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Axioms.Axiom.LowestCardNumber">
+            <summary>
+            Gets the lowest numbers card in a suit.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Axioms.Axiom.Runs">
+            <summary>
+            Gets list of run permutations, with the highest being first.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Axioms.Axiom.EvenNumbers">
+            <summary>
+            Gets list of even Numbers.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Axioms.Axiom.RedRule">
+            <summary>
+            Gets the Red Rule.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Axioms.Axiom.OrangeRule">
+            <summary>
+            Gets the Orange Rule.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Axioms.Axiom.YellowRule">
+            <summary>
+            Gets the Yellow Rule.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Axioms.Axiom.GreenRule">
+            <summary>
+            Gets the Green Rule.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Axioms.Axiom.BlueRule">
+            <summary>
+            Gets the Blue Rule.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Axioms.Axiom.IndigoRule">
+            <summary>
+            Gets the Indigo Rule.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Axioms.Axiom.VioletRule">
+            <summary>
+            Gets the Violet Rule.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Axioms.Axiom.DefaultRule">
+            <summary>
+            Gets the default rule to start the Canvas with.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Axioms.Axiom.Rules">
+            <summary>
+            Gets the list of all the rules.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Axioms.Axiom.GetRule(Red7.Domain.ValueObjects.Colour)">
+            <summary>
+            Get the rule associated with this Colour.
+            </summary>
+            <param name="colour">Colour.</param>
+            <returns>Rule.</returns>
+            <exception cref="T:System.InvalidOperationException">Ignore.</exception>
+        </member>
+        <member name="T:Red7.Domain.DomainObjects.Axioms.IAxiom">
+            <summary>
+            Game axioms.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Axioms.IAxiom.InitialNumberOfCardsInHand">
+            <summary>
+            Gets initial number of Cards in a Hand.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Axioms.IAxiom.InitialNumberOfCardsInPalette">
+            <summary>
+            Gets initial number of Cards in a Palette.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Axioms.IAxiom.HighestCardNumber">
+            <summary>
+            Gets the highest numbered card in a suit.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Axioms.IAxiom.LowestCardNumber">
+            <summary>
+            Gets the lowest numbers card in a suit.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Axioms.IAxiom.Runs">
+            <summary>
+            Gets list of run permutations, with the highest being first.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Axioms.IAxiom.EvenNumbers">
+            <summary>
+            Gets list of even Numbers.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Axioms.IAxiom.RedRule">
+            <summary>
+            Gets the Red Rule.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Axioms.IAxiom.OrangeRule">
+            <summary>
+            Gets the Orange Rule.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Axioms.IAxiom.YellowRule">
+            <summary>
+            Gets the Yellow Rule.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Axioms.IAxiom.GreenRule">
+            <summary>
+            Gets the Green Rule.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Axioms.IAxiom.BlueRule">
+            <summary>
+            Gets the Blue Rule.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Axioms.IAxiom.IndigoRule">
+            <summary>
+            Gets the Indigo Rule.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Axioms.IAxiom.VioletRule">
+            <summary>
+            Gets the Violet Rule.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Axioms.IAxiom.DefaultRule">
+            <summary>
+            Gets the default rule to start the Canvas with.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Axioms.IAxiom.GetRule(Red7.Domain.ValueObjects.Colour)">
+            <summary>
+            Get the rule associated with this Colour.
+            </summary>
+            <param name="colour">Colour.</param>
+            <returns>Rule.</returns>
+            <exception cref="T:System.InvalidOperationException">Ignore.</exception>
+        </member>
+        <member name="T:Red7.Domain.DomainObjects.Canvases.Canvas">
+            <summary>
+            Canvas.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Canvases.Canvas.#ctor(Red7.Domain.DomainObjects.Axioms.IAxiom)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Red7.Domain.DomainObjects.Canvases.Canvas"/> class.
+            </summary>
+            <param name="axiom">Game axioms.</param>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Canvases.Canvas.CurrentRule">
+            <summary>
+            Gets the Current Rule.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">Get. Ignore.</exception>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Canvases.Canvas.Cards">
+            <summary>
+            Gets cards discarded to the canvas.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Canvases.Canvas.DefaultRule">
+            <summary>
+            Gets default rule to use when the canvas is empty.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Canvases.Canvas.CardList">
+            <summary>
+            Gets internal list of cards in the canvas.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Canvases.Canvas.AddCard(Red7.Domain.DomainObjects.Cards.ICard)">
+            <summary>
+            Add a card to the Canvas.
+            </summary>
+            <param name="card">Card to be added.</param>
+        </member>
+        <member name="T:Red7.Domain.DomainObjects.Canvases.ICanvas">
+            <summary>
+            Canvas.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Canvases.ICanvas.CurrentRule">
+            <summary>
+            Gets the Current Rule.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">Get. Ignore.</exception>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Canvases.ICanvas.Cards">
+            <summary>
+            Gets cards discarded to the canvas.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Canvases.ICanvas.AddCard(Red7.Domain.DomainObjects.Cards.ICard)">
+            <summary>
+            Add a card to the Canvas.
+            </summary>
+            <param name="card">Card to be added.</param>
+        </member>
+        <member name="T:Red7.Domain.DomainObjects.Cards.Card">
+            <summary>
+            Card.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Cards.Card.#ctor(Red7.Domain.ValueObjects.Colour,Red7.Domain.ValueObjects.Number,Red7.Domain.DomainObjects.Axioms.IAxiom)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Red7.Domain.DomainObjects.Cards.Card"/> class.
+            </summary>
+            <param name="colour">Colour.</param>
+            <param name="number">Card.</param>
+            <param name="axiom">Game Axioms.</param>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Cards.Card.Colour">
+            <inheritdoc/>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Cards.Card.Number">
+            <inheritdoc/>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Cards.Card.Rule">
+            <inheritdoc/>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Cards.Card.op_Equality(Red7.Domain.DomainObjects.Cards.Card,Red7.Domain.DomainObjects.Cards.Card)">
+            <summary>
+            Implements the operator ==.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Cards.Card.op_Inequality(Red7.Domain.DomainObjects.Cards.Card,Red7.Domain.DomainObjects.Cards.Card)">
+            <summary>
+            Implements the operator !=.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Cards.Card.op_LessThan(Red7.Domain.DomainObjects.Cards.Card,Red7.Domain.DomainObjects.Cards.Card)">
+            <summary>
+            Implements the operator &lt;.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Cards.Card.op_LessThanOrEqual(Red7.Domain.DomainObjects.Cards.Card,Red7.Domain.DomainObjects.Cards.Card)">
+            <summary>
+            Implements the operator &lt;=.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Cards.Card.op_GreaterThan(Red7.Domain.DomainObjects.Cards.Card,Red7.Domain.DomainObjects.Cards.Card)">
+            <summary>
+            Implements the operator &gt;.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Cards.Card.op_GreaterThanOrEqual(Red7.Domain.DomainObjects.Cards.Card,Red7.Domain.DomainObjects.Cards.Card)">
+            <summary>
+            Implements the operator &gt;=.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Cards.Card.TopCard(System.Collections.Generic.IEnumerable{Red7.Domain.DomainObjects.Cards.ICard})">
+             <summary>
+             Determine which is the top card in the supplied list of cards.
+             </summary>
+             <param name="cards">List of cards to check for the top card.</param>
+             <returns>The top card OR null if the list is empty.</returns>
+            
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Cards.Card.CompareTo(Red7.Domain.DomainObjects.Cards.ICard)">
+            <summary>
+            Compares this card to another card.
+            </summary>
+            <param name="card">The other card.</param>
+            <returns>
+            -1 if less than the other card
+            0 if equal to the other card
+            1 if greater than the other card.
+            </returns>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Cards.Card.ToString">
+            <summary>
+            Converts to string.
+            </summary>
+            <returns>
+            A <see cref="T:System.String" /> that represents this instance.
+            </returns>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Cards.Card.Equals(System.Object)">
+            <summary>
+            Determines whether the specified <see cref="T:System.Object" />, is equal to this instance.
+            </summary>
+            <param name="obj">The <see cref="T:System.Object" /> to compare with this instance.</param>
+            <returns>
+              <c>true</c> if the specified <see cref="T:System.Object" /> is equal to this instance; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Cards.Card.GetHashCode">
+            <summary>
+            Returns a hash code for this instance.
+            </summary>
+            <returns>
+            A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.
+            </returns>
+        </member>
+        <member name="T:Red7.Domain.DomainObjects.Cards.ICard">
+            <summary>
+            Card.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Cards.ICard.Colour">
+            <summary>
+            Gets Card Colour.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Cards.ICard.Number">
+            <summary>
+            Gets Card Number.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Cards.ICard.Rule">
+            <summary>
+            Gets the Rule associated with the card.
+            </summary>
+        </member>
+        <member name="T:Red7.Domain.DomainObjects.Decks.Deck">
+            <summary>
+            The Deck of cards to deal from.
+            </summary>
+            <seealso cref="T:Red7.Domain.DomainObjects.Decks.IDeck" />
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Decks.Deck.#ctor(Red7.Domain.DomainObjects.Axioms.IAxiom)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Red7.Domain.DomainObjects.Decks.Deck"/> class.
+            </summary>
+            <param name="axiom">The axiom.</param>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Decks.Deck.Cards">
+            <summary>
+            Gets the cards.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Decks.Deck.DealHand">
+            <summary>
+            Deals a hand.
+            </summary>
+            <returns>A Hand.</returns>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Decks.Deck.DealPalette">
+            <summary>
+            Deals a palette.
+            </summary>
+            <returns>A Palette.</returns>
+        </member>
+        <member name="T:Red7.Domain.DomainObjects.Decks.IDeck">
+            <summary>
+            Deck of cards.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Decks.IDeck.Cards">
+            <summary>
+            Gets the Cards in the Deck.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Decks.IDeck.DealHand">
+            <summary>
+            Deals a Hand from the Deck.
+            </summary>
+            <returns>Hand.</returns>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Decks.IDeck.DealPalette">
+            <summary>
+            Deals a Palette from the Deck.
+            </summary>
+            <returns>Palette.</returns>
+        </member>
+        <member name="T:Red7.Domain.DomainObjects.Hands.Hand">
+            <summary>
+            Player's hand.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Hands.Hand.#ctor(System.Collections.Generic.IEnumerable{Red7.Domain.DomainObjects.Cards.ICard})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Red7.Domain.DomainObjects.Hands.Hand"/> class.
+            </summary>
+            <param name="cards">List of cards that make up the hand.</param>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Hands.Hand.Cards">
+            <inheritdoc/>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Hands.Hand.Fold">
+            <inheritdoc/>
+        </member>
+        <member name="T:Red7.Domain.DomainObjects.Hands.IHand">
+            <summary>
+            Player's hand.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Hands.IHand.Cards">
+            <summary>
+            Gets cards that make up the hand.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Hands.IHand.Fold">
+            <summary>
+            Fold the current hand.
+            </summary>
+            <returns>List of folded cards.</returns>
+        </member>
+        <member name="T:Red7.Domain.DomainObjects.Palettes.IPalette">
+            <summary>
+            The Palette is collection of cards that a player plays in order to score.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Palettes.IPalette.Cards">
+            <summary>
+            Gets the Cards in the Palette.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Palettes.IPalette.AddCard(Red7.Domain.DomainObjects.Cards.ICard)">
+            <summary>
+            Adds a Card to the Palette.
+            </summary>
+            <param name="card">Card to add.</param>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Palettes.IPalette.Fold">
+            <summary>
+            Folds this Palette.
+            </summary>
+            <returns>List of cards that were folded.</returns>
+        </member>
+        <member name="T:Red7.Domain.DomainObjects.Palettes.Palette">
+            <summary>
+            The Palette is collection of cards that a player plays in order to score.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Palettes.Palette.#ctor(System.Collections.Generic.IList{Red7.Domain.DomainObjects.Cards.ICard})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Red7.Domain.DomainObjects.Palettes.Palette"/> class.
+            </summary>
+            <param name="cards">Initial list of Cards in the Palette.</param>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Palettes.Palette.Cards">
+            <inheritdoc/>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Palettes.Palette.CardList">
+            <summary>
+            Gets the internal list of Cards in the palette,.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Palettes.Palette.AddCard(Red7.Domain.DomainObjects.Cards.ICard)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Palettes.Palette.Fold">
+            <inheritdoc/>
+        </member>
+        <member name="T:Red7.Domain.DomainObjects.Players.IPlayer">
+            <summary>
+            Player.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Players.IPlayer.Name">
+            <summary>
+            Gets the Player's Name.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Players.IPlayer.Hand">
+            <summary>
+            Gets the Hand.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Players.IPlayer.Palette">
+            <summary>
+            Gets the Palette.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Players.IPlayer.ScoringCards">
+            <summary>
+            Gets the list of Cards that are scoring.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Players.IPlayer.Score">
+            <summary>
+            Gets the Player's Score.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Players.IPlayer.FoldedCards">
+            <summary>
+            Gets the list of Folded Cards.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Players.IPlayer.HasFolded">
+            <summary>
+            Gets a value indicating whether get a value indicating whether the Player has Folded.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Players.IPlayer.Fold">
+            <summary>
+            Folds the Player's Hand.
+            </summary>
+        </member>
+        <member name="T:Red7.Domain.DomainObjects.Players.Player">
+            <summary>
+            Player.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Players.Player.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Red7.Domain.DomainObjects.Players.Player"/> class.
+            </summary>
+            <param name="name">Player's name.</param>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Players.Player.Name">
+            <inheritdoc/>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Players.Player.Hand">
+            <inheritdoc/>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Players.Player.Palette">
+            <inheritdoc/>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Players.Player.ScoringCards">
+            <inheritdoc/>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Players.Player.Score">
+            <inheritdoc/>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Players.Player.FoldedCards">
+            <inheritdoc/>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Players.Player.HasFolded">
+            <inheritdoc/>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Players.Player.Fold">
+            <inheritdoc/>
+        </member>
+        <member name="T:Red7.Domain.DomainObjects.Rules.BlueRule">
+            <summary>
+            Blue rule - Most different colours.
+            </summary>
+            <seealso cref="T:Red7.Domain.DomainObjects.Rules.IRule" />
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Rules.BlueRule.Description">
+            <summary>
+            Gets the Description of the Rule.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Rules.BlueRule.Colour">
+            <summary>
+            Gets the Colour of the Rule.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Rules.BlueRule.Score(Red7.Domain.DomainObjects.Palettes.IPalette)">
+            <summary>
+            Gets the Score for the Rule from the Palette.
+            </summary>
+            <param name="palette">The Palette.</param>
+            <returns>
+            Score.
+            </returns>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Rules.BlueRule.ScoringCards(Red7.Domain.DomainObjects.Palettes.IPalette)">
+            <summary>
+            Gets the Cards for the Palette that are Scoring.
+            </summary>
+            <param name="palette">The Palette.</param>
+            <returns>
+            List of Cards.
+            </returns>
+        </member>
+        <member name="T:Red7.Domain.DomainObjects.Rules.GreenRule">
+            <summary>
+            Green rule - Most even cards.
+            </summary>
+            <seealso cref="T:Red7.Domain.DomainObjects.Rules.IRule" />
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Rules.GreenRule.#ctor(Red7.Domain.DomainObjects.Axioms.IAxiom)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Red7.Domain.DomainObjects.Rules.GreenRule"/> class.
+            </summary>
+            <param name="axiom">The axiom.</param>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Rules.GreenRule.Description">
+            <summary>
+            Gets the Description of the Rule.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Rules.GreenRule.Colour">
+            <summary>
+            Gets the Colour of the Rule.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Rules.GreenRule.EvenNumbers">
+            <summary>
+            Gets the list of even numbers.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Rules.GreenRule.Score(Red7.Domain.DomainObjects.Palettes.IPalette)">
+            <summary>
+            Gets the Score for the Rule from the Palette.
+            </summary>
+            <param name="palette">The Palette.</param>
+            <returns>
+            Score.
+            </returns>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Rules.GreenRule.ScoringCards(Red7.Domain.DomainObjects.Palettes.IPalette)">
+            <summary>
+            Gets the Cards for the Palette that are Scoring.
+            </summary>
+            <param name="palette">The Palette.</param>
+            <returns>
+            List of Cards.
+            </returns>
+        </member>
+        <member name="T:Red7.Domain.DomainObjects.Rules.IndigoRule">
+            <summary>
+            Indigo rule - Most cards in a run.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Rules.IndigoRule.#ctor(Red7.Domain.DomainObjects.Axioms.IAxiom)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Red7.Domain.DomainObjects.Rules.IndigoRule"/> class.
+            </summary>
+            <param name="axiom">Axiom.</param>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Rules.IndigoRule.Description">
+            <inheritdoc/>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Rules.IndigoRule.Colour">
+            <inheritdoc/>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Rules.IndigoRule.Runs">
+            <summary>
+            Gets the List of Runs.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Rules.IndigoRule.Score(Red7.Domain.DomainObjects.Palettes.IPalette)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Rules.IndigoRule.ScoringCards(Red7.Domain.DomainObjects.Palettes.IPalette)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Red7.Domain.DomainObjects.Rules.IRule">
+            <summary>
+            Rules.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Rules.IRule.Description">
+            <summary>
+            Gets the Description of the Rule.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Rules.IRule.Colour">
+            <summary>
+            Gets the Colour of the Rule.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Rules.IRule.Score(Red7.Domain.DomainObjects.Palettes.IPalette)">
+            <summary>
+            Gets the Score for the Rule from the Palette.
+            </summary>
+            <param name="palette">The Palette.</param>
+            <returns>Score.</returns>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Rules.IRule.ScoringCards(Red7.Domain.DomainObjects.Palettes.IPalette)">
+            <summary>
+            Gets the Cards for the Palette that are Scoring.
+            </summary>
+            <param name="palette">The Palette.</param>
+            <returns>List of Cards.</returns>
+        </member>
+        <member name="T:Red7.Domain.DomainObjects.Rules.OrangeRule">
+            <summary>
+            Orange Rule - Most of one number.
+            </summary>
+            <seealso cref="T:Red7.Domain.DomainObjects.Rules.IRule" />
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Rules.OrangeRule.Description">
+            <inheritdoc/>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Rules.OrangeRule.Colour">
+            <inheritdoc/>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Rules.OrangeRule.Score(Red7.Domain.DomainObjects.Palettes.IPalette)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Rules.OrangeRule.ScoringCards(Red7.Domain.DomainObjects.Palettes.IPalette)">
+            <inheritdoc />
+        </member>
+        <member name="T:Red7.Domain.DomainObjects.Rules.RedRule">
+            <summary>
+            The Red Rule - Highest Card.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Rules.RedRule.Description">
+            <inheritdoc/>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Rules.RedRule.Colour">
+            <inheritdoc/>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Rules.RedRule.Score(Red7.Domain.DomainObjects.Palettes.IPalette)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Rules.RedRule.ScoringCards(Red7.Domain.DomainObjects.Palettes.IPalette)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Red7.Domain.DomainObjects.Rules.VioletRule">
+            <summary>
+            The Violet Rule - Most cards below a 4.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Rules.VioletRule.Description">
+            <inheritdoc/>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Rules.VioletRule.Colour">
+            <inheritdoc/>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Rules.VioletRule.Score(Red7.Domain.DomainObjects.Palettes.IPalette)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Rules.VioletRule.ScoringCards(Red7.Domain.DomainObjects.Palettes.IPalette)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Red7.Domain.DomainObjects.Rules.YellowRule">
+            <summary>
+            Yellow rule - Most of one colour.
+            </summary>
+            <seealso cref="T:Red7.Domain.DomainObjects.Rules.IRule" />
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Rules.YellowRule.Description">
+            <inheritdoc/>
+        </member>
+        <member name="P:Red7.Domain.DomainObjects.Rules.YellowRule.Colour">
+            <inheritdoc/>
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Rules.YellowRule.Score(Red7.Domain.DomainObjects.Palettes.IPalette)">
+            <inheritdoc />
+        </member>
+        <member name="M:Red7.Domain.DomainObjects.Rules.YellowRule.ScoringCards(Red7.Domain.DomainObjects.Palettes.IPalette)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Red7.Domain.Resources.ExceptionResource">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.Resources.ExceptionResource.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.Resources.ExceptionResource.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.Resources.ExceptionResource.CannotHavePositiveScoreWithNullTopCard">
+            <summary>
+              Looks up a localized string similar to Cannot have positive score with null top card.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.Resources.ExceptionResource.CannotHaveZeroScardWithANonNullTopCard">
+            <summary>
+              Looks up a localized string similar to Cannot have zero score with a non-null top card.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.Resources.ExceptionResource.CardListCannotBeEmpty">
+            <summary>
+              Looks up a localized string similar to Card list cannot be empty.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.Resources.ExceptionResource.DuplicateCard">
+            <summary>
+              Looks up a localized string similar to Duplicate card.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.Resources.ExceptionResource.InvalidNumberOfCards">
+            <summary>
+              Looks up a localized string similar to Invalid number of cards.
+            </summary>
+        </member>
+        <member name="T:Red7.Domain.ValueObjects.Colour">
+            <summary>
+            Colours of the Cards in ascending order.
+            </summary>
+        </member>
+        <member name="F:Red7.Domain.ValueObjects.Colour.Violet">
+            <summary>
+            Violet
+            </summary>
+        </member>
+        <member name="F:Red7.Domain.ValueObjects.Colour.Indigo">
+            <summary>
+            Indigo
+            </summary>
+        </member>
+        <member name="F:Red7.Domain.ValueObjects.Colour.Blue">
+            <summary>
+            Blue
+            </summary>
+        </member>
+        <member name="F:Red7.Domain.ValueObjects.Colour.Green">
+            <summary>
+            Green
+            </summary>
+        </member>
+        <member name="F:Red7.Domain.ValueObjects.Colour.Yellow">
+            <summary>
+            Yellow
+            </summary>
+        </member>
+        <member name="F:Red7.Domain.ValueObjects.Colour.Orange">
+            <summary>
+            Orange
+            </summary>
+        </member>
+        <member name="F:Red7.Domain.ValueObjects.Colour.Red">
+            <summary>
+            Red
+            </summary>
+        </member>
+        <member name="T:Red7.Domain.ValueObjects.Number">
+            <summary>
+            Numbers of the Cards.
+            </summary>
+        </member>
+        <member name="F:Red7.Domain.ValueObjects.Number.One">
+            <summary>
+            One
+            </summary>
+        </member>
+        <member name="F:Red7.Domain.ValueObjects.Number.Two">
+            <summary>
+            Two
+            </summary>
+        </member>
+        <member name="F:Red7.Domain.ValueObjects.Number.Three">
+            <summary>
+            Three
+            </summary>
+        </member>
+        <member name="F:Red7.Domain.ValueObjects.Number.Four">
+            <summary>
+            Four
+            </summary>
+        </member>
+        <member name="F:Red7.Domain.ValueObjects.Number.Five">
+            <summary>
+            Five
+            </summary>
+        </member>
+        <member name="F:Red7.Domain.ValueObjects.Number.Six">
+            <summary>
+            Six
+            </summary>
+        </member>
+        <member name="F:Red7.Domain.ValueObjects.Number.Seven">
+            <summary>
+            Seven
+            </summary>
+        </member>
+        <member name="T:Red7.Domain.ValueObjects.RuleScores.IRuleScore">
+            <summary>
+            Score for a Rule.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.ValueObjects.RuleScores.IRuleScore.NumberOfCards">
+            <summary>
+            Gets the Number of Cards that are scoring.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.ValueObjects.RuleScores.IRuleScore.TopCard">
+            <summary>
+            Gets the Top Card of those that are Scoring.
+            </summary>
+        </member>
+        <member name="T:Red7.Domain.ValueObjects.RuleScores.RuleScore">
+            <summary>
+            Score for a Rule.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.ValueObjects.RuleScores.RuleScore.#ctor(System.Int32,Red7.Domain.DomainObjects.Cards.ICard)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Red7.Domain.ValueObjects.RuleScores.RuleScore"/> class.
+            </summary>
+            <param name="numberOfCards">Number of cards that match the rule.</param>
+            <param name="topCard">Top card of those that match the rule.</param>
+        </member>
+        <member name="P:Red7.Domain.ValueObjects.RuleScores.RuleScore.NumberOfCards">
+            <inheritdoc/>
+        </member>
+        <member name="P:Red7.Domain.ValueObjects.RuleScores.RuleScore.TopCard">
+            <inheritdoc/>
+        </member>
+        <member name="M:Red7.Domain.ValueObjects.RuleScores.RuleScore.op_Equality(Red7.Domain.ValueObjects.RuleScores.RuleScore,Red7.Domain.ValueObjects.RuleScores.RuleScore)">
+            <summary>
+            Implements the operator ==.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:Red7.Domain.ValueObjects.RuleScores.RuleScore.op_Inequality(Red7.Domain.ValueObjects.RuleScores.RuleScore,Red7.Domain.ValueObjects.RuleScores.RuleScore)">
+            <summary>
+            Implements the operator !=.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:Red7.Domain.ValueObjects.RuleScores.RuleScore.op_LessThan(Red7.Domain.ValueObjects.RuleScores.RuleScore,Red7.Domain.ValueObjects.RuleScores.RuleScore)">
+            <summary>
+            Implements the operator &lt;.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:Red7.Domain.ValueObjects.RuleScores.RuleScore.op_LessThanOrEqual(Red7.Domain.ValueObjects.RuleScores.RuleScore,Red7.Domain.ValueObjects.RuleScores.RuleScore)">
+            <summary>
+            Implements the operator &lt;=.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:Red7.Domain.ValueObjects.RuleScores.RuleScore.op_GreaterThan(Red7.Domain.ValueObjects.RuleScores.RuleScore,Red7.Domain.ValueObjects.RuleScores.RuleScore)">
+            <summary>
+            Implements the operator &gt;.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:Red7.Domain.ValueObjects.RuleScores.RuleScore.op_GreaterThanOrEqual(Red7.Domain.ValueObjects.RuleScores.RuleScore,Red7.Domain.ValueObjects.RuleScores.RuleScore)">
+            <summary>
+            Implements the operator &gt;=.
+            </summary>
+            <param name="left">The left.</param>
+            <param name="right">The right.</param>
+            <returns>
+            The result of the operator.
+            </returns>
+        </member>
+        <member name="M:Red7.Domain.ValueObjects.RuleScores.RuleScore.CompareTo(Red7.Domain.ValueObjects.RuleScores.IRuleScore)">
+            <summary>
+            Compare this Rule Score to another.
+            </summary>
+            <param name="other">Rule Score to compare to.</param>
+            <returns>-1 if lower, 1 if higher and 0 if the same.</returns>
+        </member>
+        <member name="M:Red7.Domain.ValueObjects.RuleScores.RuleScore.Equals(System.Object)">
+            <summary>
+            Determines whether the specified <see cref="T:System.Object" />, is equal to this instance.
+            </summary>
+            <param name="obj">The <see cref="T:System.Object" /> to compare with this instance.</param>
+            <returns>
+              <c>true</c> if the specified <see cref="T:System.Object" /> is equal to this instance; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Red7.Domain.ValueObjects.RuleScores.RuleScore.GetHashCode">
+            <summary>
+            Returns a hash code for this instance.
+            </summary>
+            <returns>
+            A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.
+            </returns>
+        </member>
+        <member name="M:Red7.Domain.ValueObjects.RuleScores.RuleScore.ToString">
+            <summary>
+            Converts to string.
+            </summary>
+            <returns>
+            A <see cref="T:System.String" /> that represents this instance.
+            </returns>
+        </member>
+        <member name="T:Red7.Domain.ValueObjects.Runs.IRun">
+            <summary>
+            Run of Numbers.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.ValueObjects.Runs.IRun.Numbers">
+            <summary>
+            Gets Numbers in a Run in descending order.
+            </summary>
+        </member>
+        <member name="P:Red7.Domain.ValueObjects.Runs.IRun.Length">
+            <summary>
+            Gets the Length of the Run.
+            </summary>
+        </member>
+        <member name="T:Red7.Domain.ValueObjects.Runs.Run">
+            <summary>
+            Run of Numbers.
+            </summary>
+        </member>
+        <member name="M:Red7.Domain.ValueObjects.Runs.Run.#ctor(Red7.Domain.ValueObjects.Number,Red7.Domain.ValueObjects.Number)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Red7.Domain.ValueObjects.Runs.Run"/> class.
+            </summary>
+            <param name="start">Start Number.</param>
+            <param name="end">End Number.</param>
+        </member>
+        <member name="P:Red7.Domain.ValueObjects.Runs.Run.Numbers">
+            <inheritdoc/>
+        </member>
+        <member name="P:Red7.Domain.ValueObjects.Runs.Run.Length">
+            <inheritdoc/>
+        </member>
+        <member name="M:Red7.Domain.ValueObjects.Runs.Run.ToString">
+            <summary>
+            Converts to string.
+            </summary>
+            <returns>
+            A <see cref="T:System.String" /> that represents this instance.
+            </returns>
+        </member>
+    </members>
+</doc>
